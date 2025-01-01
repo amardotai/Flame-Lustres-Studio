@@ -1,0 +1,38 @@
+/* Header Styling */
+header{
+  position: sticky;
+  top:0;
+  display: flex;
+  flex-direction: row;
+  height: 7vh;
+  width: 100vw;
+  background-color: aqua;
+  
+}
+
+.logo-container{
+  flex: 1;
+  border-right:2px solid #000;
+}
+
+.logo-container img{
+  width: 4rem;
+}
+
+.nav-container{
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: bisque;
+}
+
+.nav-container a{
+  text-decoration: none;
+  color: #000;
+}
+
+.hero{
+  height: 100vh;
+  background-image: linear-gradient(violet,yellow);
+}
