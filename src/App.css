@@ -19,6 +19,7 @@ header{
   z-index: 1;
   max-width: 100vw;
   /* background-color: blue; */
+  
 }
 
 /* visible header */
@@ -29,8 +30,12 @@ header{
   flex-direction: row;
   height: 7vh;
   width: 100%;
-  margin-bottom: -7vh;
+  /* margin-bottom: -7vh; */
   z-index: 3;
+  background: rgba( 255, 255, 255, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 7.5px );
+-webkit-backdrop-filter: blur( 7.5px );
 }
 
 .logo-container{
@@ -159,33 +164,41 @@ header{
 
 
 
-/*  */
+/* ///////////////////////HEROBOX STYLING\\\\\\\\\\\\\\\\ */
 
-.bg-im{
-  height: 100vh;
+.herobox{
+  min-height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url("/src/assets/Images/image.png");
+  /* background-image: url("/src/assets/Images/image.png"); */
   font-family: agra;
+  font-size: 3rem;
   color: #fff;
   text-align: center;
-  overflow-x: hidden;
-  overflow-y: clip;
+  /* overflow-x: hidden; */
+  /* overflow-y: clip; */
   margin: 0;
+  padding-top: 10vh;
 }
 
-.bg-im h1{
+.herobox h1{
   padding-top: 3rem;
   font-weight: 50;
   color: rgb(255, 255, 255);
   font-size: 3rem;
+  position: sticky;
+  top: -6.5vh;
 }
 
-.bg-im p{
-  font-size: 3rem;
+.hero-intro{
+  font-size: 0.7rem;
 }
+
+
+
+
 
 .textblock{
   background-color: #2f1b1a;
