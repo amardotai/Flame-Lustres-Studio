@@ -172,7 +172,7 @@ header{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* background-image: url("/src/assets/Images/image.png"); */
+  /* background-image: url(); */
   font-family: agra;
   font-size: 3rem;
   color: #fff;
@@ -195,6 +195,8 @@ header{
 .hero-intro{
   font-size: 0.7rem;
 }
+
+
 
 
 

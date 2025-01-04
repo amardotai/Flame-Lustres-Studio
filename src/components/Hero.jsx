@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 // import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function Hero(props) {
+  var bg = props.bi;
   const [fontSize, setFontSize] = useState(3);
   const [opac, setOpac] = useState(0);
   const [z, setZ] = useState(0);
@@ -37,7 +38,7 @@ function Hero(props) {
   return (
     <div
       className="herobox"
-      style={{ backgroundImage: `url("/src/assets/Images/${props.bi}")` }}
+      style={{ backgroundImage: `url("Images/${props.bi}")` }}
     >
       <p>{props.p1}</p>
       <h1 style={{ fontSize: `${fontSize}rem`, zIndex: `${z}` }}>{props.h}</h1>

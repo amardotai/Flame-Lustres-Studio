@@ -37,7 +37,7 @@ function Experience(props) {
   return (
     <div
       className="herobox"
-      style={{ backgroundImage: `url("/src/assets/Images/${props.bi}")` }}
+      style={{ backgroundImage: `url("Images/${props.bi}")` }}
     >
       <p>{props.p1}</p>
       <h1 style={{ fontSize: `${fontSize}rem`, zIndex: `${z}` }}>{props.h}</h1>
