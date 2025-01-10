@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import headerLogo from "../../public/logo.png";
-import navBtn from "../assets/icons/menu.png";
+import navBtn from "../../public/menu.png";
 
 function Header() {
   const [blockClass, setBlockClass] = useState("block");
