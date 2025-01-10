@@ -1,45 +1,39 @@
 import React, { useState } from "react";
-import headerLogo from "../assets/Logos/logo.png";
-import navBtn from "../assets/Icons/menu.png";
-import $ from "jquery";
-import { use } from "react";
+import headerLogo from "../assets/icons/logo.png";
+import navBtn from "../assets/icons/menu.png";
 
 function Header() {
   const [blockClass, setBlockClass] = useState("block");
   const [menuClass, setMenuClass] = useState("menu-list");
+  const [z, setZ] = useState(0);
 
   function clickFunction() {
     if (blockClass === "block") {
       setBlockClass("block-active");
       setMenuClass("menu-list-active");
+      setZ(2);
     } else {
       setBlockClass("block");
       setMenuClass("menu-list");
+      setZ(0);
     }
   }
-
   return (
-    <header>
+    <header style={{ zIndex: z }}>
       <div className="header-show">
         <div className="logo-container">
           <img src={headerLogo} alt="Logo" />
         </div>
         <div className="menu-btn" onClick={clickFunction}>
-          <img src={navBtn} alt="Menu" className="nav-btn" />
+          <img src={navBtn} alt="Burger" />
         </div>
       </div>
-
       <div className="header-menu">
         <div className="menu-overlay">
           <div className={`b1 ${blockClass}`}></div>
           <div className={`b2 ${blockClass}`}></div>
           <div className={`b3 ${blockClass}`}></div>
           <div className={`b4 ${blockClass}`}></div>
-        </div>
-        <div className="strips">
-          <div className="strip one"></div>
-          <div className="strip two"></div>
-          <div className="strip three"></div>
         </div>
         <div className="menu">
           <ul className={menuClass}>
