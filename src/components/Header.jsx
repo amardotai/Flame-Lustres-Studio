@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import headerLogo from "../assets/icons/logo.png";
+import headerLogo from "../../public/logo.png";
 import navBtn from "../assets/icons/menu.png";
 
 function Header() {
